@@ -1,5 +1,6 @@
 # customer-research-tutorial
 Automatically research and outbound companies with Exa API and google sheets app scripts. 
+Tutorial walk through: https://www.loom.com/share/69bbc99a7a43458490b88bbd21b945a1?sid=c7eb94e3-4be1-4fc0-a201-b0672cf7a43c
 
 ## GETTING STARTED
 1. Create an Exa API key: get started for free [here](dashboard.exa.ai).
