@@ -14,4 +14,4 @@ Automatically research and outbound companies with Exa API and google sheets app
 
 ## CUSTOMIZING
 - Templates: in the 'templates' tab of the google sheet, add your own customer categories, category descriptions, routing, and templates
-- Code Categories: inside the assignCategory() function, update the category enums to be your personal customer categories 
+- Code categories: inside the assignCategory() function, update the category enums to be your personal customer categories 
