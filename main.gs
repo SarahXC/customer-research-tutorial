@@ -55,6 +55,7 @@ async function updateEmailCategory() {
   console.log('Updating email category...');
   try {
     const rows = worksheet.getDataRange().getValues();
+    // iterate through the rows 
     for (let i = 1; i < rows.length; i++) {
       const email = rows[i][emailColumnIndex];
 
@@ -70,7 +71,7 @@ async function updateEmailCategory() {
 }
 
 /**
- * Determines the category of an email based on its domain.
+ * Determines the category of an email based on its domain: company, personal, or student
  * @param {string} email - The email address to categorize.
  * @returns {string} - The category of the email.
  */
@@ -112,7 +113,7 @@ async function updateCompanyWebsite() {
 
 async function fetchCompanyWebsiteFromEmail(email) {
   const emailDomain = email.split('@')[1];
-  const searchQuery = `${emailDomain} company`;
+  const searchQuery = `${emailDomain} company`; // uses email domain to find company website 
 
   const apiUrl = 'https://api.exa.ai/search';
   const requestPayload = {
@@ -176,7 +177,7 @@ async function updatePersonalLinkedin() {
 
 async function fetchPersonalLinkedinFromNameAndEmail(name, email) {
   const emailDomain = email.split('@')[1];
-  const searchQuery = `${name} ${emailDomain}`;
+  const searchQuery = `${name} ${emailDomain}`; 
 
   const apiUrl = 'https://api.exa.ai/search';
   const requestPayload = {
@@ -184,7 +185,7 @@ async function fetchPersonalLinkedinFromNameAndEmail(name, email) {
     use_autoprompt: false,
     num_results: 1,
     type: 'keyword',
-    include_domains: ['linkedin.com']
+    include_domains: ['linkedin.com'] // Only want results from linkedin
   };
 
   const requestOptions = {
