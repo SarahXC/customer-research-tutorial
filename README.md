@@ -10,5 +10,5 @@ Automatically research and outbound companies with Exa API and google sheets app
 
 ## CUSTOMIZING
 - Add your personal Exa API key and OpenAI key 
-- Templates: in the 'templates' tab, add your own customer categories, examples, routing, and templates
+- Templates: in the 'templates' tab of the google sheet, add your own customer categories, category descriptions, routing, and templates
 - Code Categories: inside the assignCategory() function, update the category enums to be your personal customer categories 
