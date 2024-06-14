@@ -2,7 +2,7 @@
 Automatically research and outbound companies with Exa API and google sheets app scripts. 
 
 ## GETTING STARTED
-1. Exa API key: get started for free [here](dashboard.exa.ai)
+1. Exa API key: get started for free [here](dashboard.exa.ai).
 2. Create an OpenAI key
 3. Make a copy of this example spreadsheet: https://docs.google.com/spreadsheets/d/1ZsLlbdgFBFwlhtUC-8yQF31jzEA0JfSfwY2Fnhnhhfk/edit?usp=sharing
 4. In the spreadsheet, go to extensions -> app scripts -> add the code from this repo into your app scripts
